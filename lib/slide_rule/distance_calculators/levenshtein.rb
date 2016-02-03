@@ -1,7 +1,7 @@
 module SlideRule
   module DistanceCalculators
     class Levenshtein
-      def calculate(first, second)
+      def calculate(first, second, options={})
         ::Vladlev.get_normalized_distance(first, second).to_f
 
         # Lower bound is difference in length

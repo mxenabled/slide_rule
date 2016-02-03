@@ -14,13 +14,13 @@ describe ::SlideRule::DistanceCalculator do
   end
 
   class CustomCalc
-    def calculate(_first, _second)
+    def calculate(_first, _second, _rule)
       0.9
     end
   end
 
   class NilCalc
-    def calculate(_first, _second)
+    def calculate(_first, _second, _rule)
       nil
     end
   end

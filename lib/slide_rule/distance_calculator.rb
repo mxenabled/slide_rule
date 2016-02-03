@@ -58,6 +58,7 @@ module SlideRule
     #   :attribute_name => {
     #     :weight => 0.90,
     #     :calculator => :distance_calculator,
+    #     :threshold => 30
     #   }
     # }
     def calculate_distance(i1, i2)
@@ -72,7 +73,7 @@ module SlideRule
       distances = @rules.map do |attribute, rule|
         val1 = i1.send(attribute)
         val2 = i2.send(attribute)
-        distance = rule[:calculator].calculate(val1, val2)
+        distance = rule[:calculator].calculate(val1, val2, rule)
         next { distance: distance.to_f, weight: rule[:weight] } unless distance.nil?
 
         nil

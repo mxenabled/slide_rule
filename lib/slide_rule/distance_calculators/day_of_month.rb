@@ -7,7 +7,7 @@ module SlideRule
       # Calculates distance using 15 as the max point.
       #   Does not take into account the number of days in the actual month being considered.
       #
-      def calculate(first, second)
+      def calculate(first, second, options={})
         return nil if first.nil? || second.nil?
         first = cleanse_date(first)
         second = cleanse_date(second)
