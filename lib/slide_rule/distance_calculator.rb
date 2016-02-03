@@ -70,11 +70,11 @@ module SlideRule
     private
 
     def calculate_weighted_distances(i1, i2)
-      distances = @rules.map do |attribute, rule|
+      distances = @rules.map do |attribute, options|
         val1 = i1.send(attribute)
         val2 = i2.send(attribute)
-        distance = rule[:calculator].calculate(val1, val2, rule)
-        next { distance: distance.to_f, weight: rule[:weight] } unless distance.nil?
+        distance = options[:calculator].calculate(val1, val2, options)
+        next { distance: distance.to_f, weight: options[:weight] } unless distance.nil?
 
         nil
       end
