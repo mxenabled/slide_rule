@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/slide_rule.svg)](https://badge.fury.io/rb/slide_rule) [![Build Status](https://travis-ci.org/mattnichols/slide_rule.svg)](https://travis-ci.org/mattnichols/slide_rule)
+[![Gem Version](https://badge.fury.io/rb/slide_rule.svg)](https://badge.fury.io/rb/slide_rule) [![Build Status](https://travis-ci.org/mxenbaled/slide_rule.svg)](https://travis-ci.org/mxenabled/slide_rule)
 
 # SlideRule
 Ruby object distance calculator
@@ -21,7 +21,7 @@ _Note: weights are assumed to be equal if not provided_
 
 ##Describe the field distance calculators
 
-Each field to be considered in the distance calculation should be described 
+Each field to be considered in the distance calculation should be described
 with a calculation method and weight(optional)
 
 Valid calculators:
@@ -112,7 +112,7 @@ matcher.closest_match("Howdy Doody Time!", ["Felix the cat", "Mighty Mouse"], 0.
 # => { :item=>"Mighty Mouse", :distance=>0.29411764705882354 }
 ```
 
-See the [distance_calculators](https://github.com/mattnichols/slide_rule/tree/master/lib/slide_rule/distance_calculators) directory in source for more examples.
+See the [distance_calculators](https://github.com/mxenabled/slide_rule/tree/master/lib/slide_rule/distance_calculators) directory in source for more examples.
 
 
 # To Do

@@ -1,5 +1,7 @@
 language: ruby
 rvm:
-  - jruby-1.7.20.1
-  - jruby-9.0.1.0
-before_install: gem install bundler -v 1.10.6
+  - jruby-1.7.27
+  - jruby-9.1.16.0
+  - ruby-2.3.7
+  - ruby-2.4.4
+  - ruby-2.5.1
