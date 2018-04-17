@@ -1,3 +1,4 @@
+require 'date'
 require 'vladlev'
 
 require_relative './slide_rule/version.rb'
