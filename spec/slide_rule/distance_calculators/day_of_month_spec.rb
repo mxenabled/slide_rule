@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'date'
 
 describe ::SlideRule::DistanceCalculators::DayOfMonth do
   describe '#calculate' do
